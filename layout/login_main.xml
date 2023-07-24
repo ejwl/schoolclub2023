@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:id="@+id/sc_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FDFDFD"
+    android:foregroundTint="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/tx_id"
+            android:layout_width="300dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/bold"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:hint="  아이디"
+            android:inputType="text"
+            android:padding="30dp"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="90dp"
+            android:text="login"
+            android:textSize="48sp"
+            android:textStyle="normal"
+            android:translationX="55dp"
+            android:translationY="125dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/tx_password"
+            android:layout_width="300dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/bold"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:hint=" 비밀번호"
+            android:inputType="text|textPassword"
+            android:padding="30dp"
+            android:singleLine="false"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_find"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_id_find"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bold"
+            android:shadowColor="#FFFFFF"
+            android:text="아이디 찾기"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="55dp"
+            android:translationY="560dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/password_find"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_password_find"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bold"
+            android:shadowColor="#FFFFFF"
+            android:text="비밀번호 찾기"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="190dp"
+            android:translationY="560dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/new_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_anchor="@+id/id"
+        app:layout_anchorGravity="center">
+
+        <Button
+            android:id="@+id/bt_new_id"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bold"
+            android:shadowColor="#FFFFFF"
+            android:text="회원가입"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="57dp"
+            android:translationY="620dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
