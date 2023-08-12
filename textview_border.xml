@@ -6,4 +6,3 @@
     android:color="#000000" /> <!-- 테두리 색상 (검정색으로 변경) -->
     <corners android:radius="8dp" /> <!-- 테두리의 모서리 둥글기 설정 -->
 </shape>
-
